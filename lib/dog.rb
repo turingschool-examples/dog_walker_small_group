@@ -1,9 +1,10 @@
 class Dog
 
-  attr_reader :name, :breed, :small_breed, :walks
+  attr_reader :name, :age, :breed, :small_breed, :walks
 
-  def initialize(name, breed, small_breed)
+  def initialize(name, age, breed, small_breed)
     @name = name
+    @age = age
     @breed = breed
     @small_breed = small_breed
     @walks = 0
@@ -16,5 +17,9 @@ class Dog
       "ROOF"
     end
   end
-  
+
+  def walk
+    @walks += 1
+  end
+
 end
